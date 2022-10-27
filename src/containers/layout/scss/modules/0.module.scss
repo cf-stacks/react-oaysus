@@ -1,0 +1,33 @@
+.layoutContainer {
+  position: relative;
+  max-width: $page-max-width;
+  margin: auto;
+}
+
+.mobileLayout {
+  position: relative;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  background: #051922;
+}
+
+.formLayout {
+  position: relative;
+  margin: auto;
+  max-width: $page-max-width;
+  background: radial-gradient(51% 38% at 50% 37.37%, #104258 0%, #051922 100%);
+  padding-top: 120px;
+}
+
+.formLayoutBgImage {
+  background-image: url(../../../../assets/images/bgover.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 400px;
+  padding-bottom: 200px;
+}
+
+.bgColor {
+  background: radial-gradient(51% 38% at 50% 37.37%, #104258 0%, #051922 100%);
+}

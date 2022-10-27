@@ -1,0 +1,26 @@
+.stepContainer {
+  max-width: 145px;
+
+  .steper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 180px;
+    border-left: 2px solid $color-green;
+
+    .stepItem {
+      display: flex;
+      align-items: center;
+
+      :first-child {
+        color: $color-green;
+      }
+
+      span {
+        color: $color-white;
+        font-size: $font-size-info;
+        line-height: $line-high-info;
+      }
+    }
+  }
+}

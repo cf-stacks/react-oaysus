@@ -1,0 +1,11 @@
+.appHeader {
+  background-color: rgba($color-page-bg, 0.3);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.basicHeader {
+  background-color: $color-page-bg !important;
+}

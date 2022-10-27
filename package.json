@@ -1,0 +1,81 @@
+{
+  "name": "chakra-oaysus",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@chakra-ui/icons": "^2.0.2",
+    "@chakra-ui/react": "^2.2.1",
+    "@chakra-ui/stat": "^2.0.2",
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^14.2.0",
+    "@web3-react/core": "^6.1.9",
+    "@web3-react/injected-connector": "^6.0.7",
+    "env-cmd": "^10.1.0",
+    "ethers": "^5.6.8",
+    "framer-motion": "6.3.11",
+    "moment": "^2.29.3",
+    "react": "^18.1.0",
+    "react-datepicker": "^4.8.0",
+    "react-dom": "^18.1.0",
+    "react-hook-form": "^7.32.2",
+    "react-icons": "^4.4.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "react-select": "^5.3.2",
+    "react-table": "^7.8.0",
+    "rechart": "^0.0.1",
+    "recharts": "^2.1.10",
+    "sass": "^1.52.3",
+    "web-vitals": "^2.1.4",
+    "web3": "^1.7.3"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject",
+    "build:testing": "env-cmd -f .env.testing react-app-rewired build",
+    "build:staging": "env-cmd -f .env.staging react-app-rewired build",
+    "emptyProdBucket": "aws s3 rm s3://oaysus-prod --recursive",
+    "deployProd": "yarn build && yarn emptyProdBucket && aws s3 sync './build' s3://oaysus-prod --acl public-read --cache-control max-age=31536000 && yarn invalidateProd",
+    "invalidateProd": "aws cloudfront create-invalidation --distribution-id ENQ7SIP9MQIIM --paths '/*'"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.0",
+    "eslint": "^8.17.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "https-browserify": "^1.0.0",
+    "os-browserify": "^0.3.0",
+    "prettier": "^2.7.0",
+    "process": "^0.11.10",
+    "react-app-rewired": "^2.2.1",
+    "react-error-overlay": "^6.0.9",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "url": "^0.11.0"
+  },
+  "lint": "eslint .",
+  "lint:fix": "eslint --fix",
+  "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
+}

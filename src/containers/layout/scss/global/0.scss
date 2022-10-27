@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'Urbanist';
+  src: local('Urbanist'), url(../../../../assets/fonts/Urbanist.ttf) format('truetype');
+}
+
+body {
+  font-family: 'Urbanist';
+  font-style: normal;
+  background: $color-page-bg !important;
+}
+
+input::placeholder {
+  color: $color-white;
+  opacity: 1; /* Firefox */
+  font-size: 14px;
+}

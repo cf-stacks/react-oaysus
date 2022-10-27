@@ -1,0 +1,116 @@
+.bgColor {
+  background: radial-gradient(51% 38% at 50% 37.37%, #104258 0%, #051922 100%)
+}
+
+.banner {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-top: 120px;
+
+  p {
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: $font-weight-normal;
+    max-width: 688px;
+    font-size: $font-size-text;
+    line-height: $line-high-text;
+    color: $color-white;
+    margin: auto;
+
+    &:first-child {
+      font-weight: $font-weight-normal;
+      font-size: $font-size-title;
+      line-height: $line-high-title;
+      max-width: 801px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.bgImage {
+  background-image: url(../../../assets/images/bgover.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-mask: radial-gradient(100% 0% at 0% 100%, #051941 30%, #051941);
+  mask: radial-gradient(100% 0% at 0% 100%, #051941 30%, #051941);
+  min-height: 400px;
+  justify-content: center;
+  text-align: center;
+  padding-top: 139px;
+
+  .wrapper {
+    width: 100%;
+
+    button {
+      color: $color-white;
+      border: 1px solid $color-green;
+      vertical-align: top;
+
+      &:hover {
+        color: $color-page-bg;
+        background: $color-green;
+      }
+    }
+  }
+
+  input {
+    background-color: $color-page-bg;
+    border: none;
+    color: $color-white;
+    max-width: 330px;
+    margin-right: 20px;
+    font-size: $font-size-info;
+
+    &::-webkit-input-placeholder {
+      color: $color-grey;
+    }
+  }
+}
+
+.bannerIcon {
+  width: 20px;
+  display: inline-flex;
+  margin-left: 5px;
+}
+
+.colorOaysus {
+  color: $color-green;
+}
+
+.searchToken {
+  width: 470px;
+  margin: -150px auto;
+  display: flex;
+}
+
+.summaryInfo {
+  font-family: 'Urbanist';
+  text-align: center;
+  margin: -45px 0 0 0;
+  padding: 0 120px 45px 120px;
+
+  .statNumber {
+    font-size: $font-size-semititle;
+    line-height: $line-high-text;
+  }
+
+  .helpText {
+    color: #fff;
+    font-weight: $font-weight-semibold;
+    line-height: $line-high-text;
+    font-size: $font-size-text;
+    margin: 10px 0 0 0;
+  }
+}
+
+.summaryInfo > div > div {
+  max-width: 280px;
+  background: $color-card;
+  border-radius: 15px;
+  height: 100%;
+  padding: 48px 0 38px 0;
+  font-size: 33px;
+  line-height: 33px;
+  color: #fff;
+  margin: 0 auto;
+}

@@ -1,0 +1,123 @@
+.logo {
+  width: 182px;
+}
+
+.navigation {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 30px 135px;
+}
+
+.navigationMenu {
+  margin-left: auto;
+
+  ul {
+    display: flex;
+    padding: 0;
+  }
+
+  li {
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-size: $font-size-info;
+    font-weight: $font-weight-semibold;
+    list-style-type: none;
+    border-radius: 7px;
+    padding: 12px 16px;
+    color: $color-white;
+    border: 1px solid $color-green;
+    background: transparent;
+
+    &:first-child {
+      margin-right: 30px;
+    }
+
+    &:hover {
+      background: $color-green;
+      cursor: pointer;
+      color: $color-page-bg;
+    }
+
+    a {
+      text-decoration: none;
+      display: flex;
+      width: 100%;
+      align-items: center;
+
+      svg {
+        margin-right: 15px;
+      }
+    }
+  }
+}
+
+.mobileNavigation {
+  width: $page-max-width;
+  display: flex;
+  align-items: center;
+  color: $color-page-bg;
+  margin: auto;
+  padding: 16px 20px;
+
+  .logo {
+    width: 126px;
+    margin-left: 30px;
+  }
+
+  .rightNavMenu {
+    color: $color-white;
+    display: flex;
+    margin-left: 40px;
+    list-style: none;
+
+    li {
+      margin: 0 15px;
+    }
+  }
+
+  .navigationMenu {
+    li {
+      display: flex;
+      height: 40px;
+      align-items: center;
+      border-color: $color-green;
+      color: $color-green;
+      margin: 0 10px;
+
+      &:first-child {
+        border: none;
+        padding: 6px;
+
+        img {
+          width: 82px;
+          height: 30px;
+        }
+      }
+
+      &:last-child {
+        background: rgba($color-green, 0.1);
+        border: 1px solid rgba($color-green, 0.1);
+        margin-right: 20px;
+        color: $color-white;
+
+        &:hover {
+          background: rgba($color-green, 0.1);
+        }
+      }
+      
+      &:hover {
+        background-color: transparent;
+        color: $color-green;
+      }
+
+      a {
+        line-height: 21px;
+        svg,
+        img {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

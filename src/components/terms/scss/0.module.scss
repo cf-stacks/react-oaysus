@@ -1,0 +1,41 @@
+.termsLayout {
+  font-family: 'Urbanist';
+  font-style: normal;
+  background-color: $color-white;
+
+  .banner {
+    text-align: left;
+    background-color: transparent;
+    padding: 90px 230px 130px 230px;
+    max-width: $page-max-width;
+    margin: auto;
+    color: $color-grey;
+
+    .subTitle {
+      font-family: 'Urbanist';
+      font-style: normal;
+      font-weight: $font-weight-normal;
+      font-size: $font-size-title;
+      line-height: $line-high-title;
+      color: $color-black;
+    }
+
+    h3 {
+      font-size: $font-size-text;
+      padding-top: 50px;
+      font-weight: $font-weight-extrabold;
+      color: $color-black;
+    }
+
+    p {
+      font-weight: $font-weight-light;
+      width: 100%;
+      font-size: $font-size-text;
+      line-height: $line-high-text;
+
+      &:first-child {
+        margin: 77px 0 27px;
+      }
+    }
+  }
+}

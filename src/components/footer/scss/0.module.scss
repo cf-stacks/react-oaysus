@@ -1,0 +1,61 @@
+html .footerContainer {
+  max-width: $page-max-width;
+  display: flex;
+  padding: 65px 120px;
+  line-height: 42px;
+
+  .footerBtnGroup {
+    margin-left: 40px;
+
+    a:hover {
+      background: transparent;
+
+      svg {
+        color: $color-green;
+      }
+    }
+  }
+
+  a.icon-svg {
+    padding-top: 5px;
+    margin-right: 10px;
+
+    &:hover {
+      color: $color-green;
+    }
+  }
+}
+
+.footerMainColor {
+  font-size: $font-size-text;
+  line-height: $line-high-text;
+  color: $color-grey;
+
+  &.copy {
+    margin-left: 15px;
+  }
+}
+
+.footerSubColor {
+  font-size: $font-size-text;
+  line-height: $line-high-text;
+  color: $color-white;
+
+  svg {
+    color: $color-white;
+  }
+}
+
+.proDate {
+  float: right;
+  margin-left: auto;
+  margin-right: 0;
+
+  a:hover {
+    color: $color-green;
+  }
+}
+
+.footerSmaller {
+  padding: 10px 120px !important;
+}

@@ -1,0 +1,38 @@
+.banner {
+  text-align: center;
+  margin-bottom: 20px;
+
+  p {
+    font-family: 'Urbanist';
+    font-style: normal;
+    margin: 39px auto 0;
+    font-size: 18px;
+    color: #fff;
+
+    &:first-child {
+      font-weight: 500;
+      font-size: 60px;
+      font-weight: 500;
+      width: 801px;
+      margin: 125px auto 0;
+      line-height: 72px;
+    }
+
+    &:last-child {
+      width: 530px;
+      line-height: 33px;
+      font-weight: 400;
+    }
+  }
+}
+
+.bgImage {
+  position: relative;
+  background-image: url(../../../assets/images/bgover.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 450px;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+}

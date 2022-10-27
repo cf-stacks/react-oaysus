@@ -1,0 +1,109 @@
+.modalLayout {
+  .formLayout {
+    max-width: 380px;
+    margin: auto;
+    margin-top: 250px;
+    background-color: rgba($color-black, 0.8);
+    border-radius: 9px;
+    position: relative;
+
+    label {
+      font-family: 'Urbanist';
+      font-style: normal;
+      font-weight: $font-weight-semibold;
+      font-size: 12px;
+      line-height: 14.4px;
+      color: $color-grey;
+    }
+
+    .modalIcon {
+      position: absolute;
+      margin: 0 auto;
+      transform: translate(-50%, 0%);
+      top: -38px;
+      left: 50%;
+    }
+
+    .formLabel {
+      font-style: normal;
+      font-weight: $font-weight-normal;
+      font-size: $font-size-text;
+      line-height: $line-high-info;
+      text-align: center;
+      color: $color-green;
+      text-transform: uppercase;
+      padding-top: 42px;
+      margin-bottom: 24px;
+    }
+
+    .cryptoGroup {
+      background-color: $color-page-bg;
+      border-radius: 7px;
+      height: 60px;
+      margin: 10px 22px;
+      padding: 0 10px;
+
+      .balanceLabel {
+        color: #fff;
+        font-weight: 600;
+        font-size: $font-size-text;
+        line-height: 22px;
+        background-color: transparent;
+        font-family: 'Urbanist';
+        font-style: normal;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      .cryptoWrapper {
+        display: flex;
+        margin-top: 7px;
+      }
+    }
+
+    .customSelect__indicator-separator {
+      display: none !important;
+    }
+
+    .selectMenu {
+      display: flex;
+      z-index: 99;
+
+      img {
+        margin-right: 10px;
+      }
+    }
+
+    .slippage {
+      margin: 20px 22px;
+      line-height: $line-high-info;
+
+      label:last-child {
+        float: right;
+        color: $color-green;
+        line-height: $line-high-info;
+      }
+    }
+
+    .swapBtn {
+      width: 88%;
+      margin: 20px 22px 25px 22px;
+      background: $color-green;
+      border: 1px solid $color-green;
+      border-radius: 7px;
+      padding: 10px;
+      text-transform: uppercase;
+      color: $color-page-bg;
+      font-weight: $font-weight-semibold;
+      font-size: $font-size-info;
+      line-height: 17px;
+
+      &:hover {
+        background-color: transparent;
+        color: $color-green;
+      }
+    }
+  }
+}
